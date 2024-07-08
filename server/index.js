@@ -37,7 +37,6 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 app.use('/', (req, res)=>{
   res.send('Hello Noddy');
-  console.log("Hello Noddy");
 })
 
 /* FILE STORAGE */
