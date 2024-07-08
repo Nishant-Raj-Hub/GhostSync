@@ -18,6 +18,13 @@ import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 
+
+app.use('/', (req, res)=>{
+  res.send('Hello Noddy');
+  console.log("Hello Noddy");
+})
+
+
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
